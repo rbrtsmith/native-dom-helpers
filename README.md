@@ -6,13 +6,13 @@ A collection of helper functions for interacting with the native DOM
 `hasClass(document.querySelector('#id), 'foo');`
 
 ##addClass##
- Takes a DOM element node and a string.  It appends the supplied string to the className attribute if not already present.  
+ Takes a single DOM element, or a collection and a string.  It appends the supplied string to the className attribute if not already present on each node in the collection.  
 `addClass(document.querySelector('#id), 'foo');`  
 **Dependencies**  
   * hasClass
 
 ##removeClass##
-Tajes a DOM element node and a string.  It removes the supplied string from the className attribute if it exists.  
+Takes a single DOM element or a collection and a string.  It removes the supplied string from the className attribute if it exists for each node in the collection.  
 `removeClass(document.querySelector('#id), 'foo');`  
 **Dependencies**  
   * hasClass
