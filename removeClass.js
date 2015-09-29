@@ -6,9 +6,7 @@ function removeClass(collection, cl) {
     }
   }
   if (collection.length) {
-    [].forEach.call(collection, function(el) {
-      removeCl(el);
-    });
+    [].forEach.call(collection, removeCl);
   } else {
     removeCl(collection);
   }
