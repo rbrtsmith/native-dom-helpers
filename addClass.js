@@ -5,9 +5,7 @@ function addClass(collection, cl) {
     }
   }
   if (collection.length) {
-    [].forEach.call(collection, function(el) {
-      addCl(el);
-    });
+    [].forEach.call(collection, addCl);
   } else {
     addCl(collection);
   }
